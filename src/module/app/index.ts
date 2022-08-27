@@ -1,5 +1,5 @@
 import { loadRoutersModulesRegister } from '@core/decorator/routes'
-import { GameDoubleModule } from '@module/game/double/game.module'
+import { GameDoubleModule } from '@module/game/double/module'
 import { Module } from '@nestjs/common'
 import { RouterModule } from 'nest-router'
 

@@ -1,6 +1,6 @@
 import { ForRouteModule } from '@core/decorator/routes'
 import { Module } from '@nestjs/common'
-import { GameDoubleController } from './game.controller'
+import { GameDoubleController } from '../controller'
 
 @ForRouteModule('games')
 @Module({
