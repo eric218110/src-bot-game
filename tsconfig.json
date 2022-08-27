@@ -12,23 +12,11 @@
     "experimentalDecorators": true,
     "strictNullChecks": true,
     "paths": {
-      "@main/*": [
-        "./main/*"
-      ],
-      "@presentation/*": [
-        "./presentation/*"
+      "@core/*": [
+        "./core/*"
       ],
       "@module/*": [
         "./module/*"
-      ],
-      "@domain/*": [
-        "./domain/*"
-      ],
-      "@data/*": [
-        "./data/*"
-      ],
-      "@infra/*": [
-        "./infra/*"
       ]
     }
   },

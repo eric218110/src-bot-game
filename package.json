@@ -20,8 +20,8 @@
     "ci:coveralls": "COVERALLS_REPO_TOKEN=LIBzrVOGRyVWp5R3HIyTCmf3tCY98Gqh3 coveralls < coverage/lcov.info",
     "prebuild": "rimraf dist",
     "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
-    "start": "node ./dist/main/server/index.js",
-    "start:dev": "ts-node-dev -r tsconfig-paths/register --respawn --ignore-watch node_modules --no-notify --clear --quiet ./src/main/server/index.ts",
+    "start": "node ./dist/core/main/server/index.js",
+    "start:dev": "ts-node-dev -r tsconfig-paths/register --respawn --ignore-watch node_modules --no-notify --clear --quiet ./src/core/main/server/index.ts",
     "migrate": "npx prisma migrate dev"
   },
   "devDependencies": {
@@ -61,6 +61,7 @@
     "@nestjs/platform-express": "^8.2.6",
     "@prisma/client": "3.8.1",
     "dotenv": "^14.3.0",
+    "nest-router": "^1.0.9",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.5.2",
     "spinnies": "^0.5.1",
